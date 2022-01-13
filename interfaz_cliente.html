@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+        <meta charset= "utf-8">		
+		<!-- swiper  slide-->
+		<link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/swiper.css">	
+
+		<link rel="stylesheet" href="css/portada.css">	
+		<link rel="stylesheet" href="css/productos.css">	
+		<link rel="stylesheet" href="css/menu-iconos.css">	
+        <link rel="stylesheet" href="css/rutinas.css">	
+        <link rel="stylesheet" href="css/contenedor-informacion.css">	
+        <link rel="stylesheet" href="css/header.css">											        									
+		<meta name="viewport"  content="width=device-width initial-scale=1.0">		
+		<!--Barras  de progreso librerias
+		<link rel="stylesheet" href="/lib/w3.css">   
+		--> 
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    	<link
+	    rel="stylesheet"
+    	href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    	/>     
+		<!--FOnts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,500&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">  
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@300;400;700&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<title>Gym</title>
+	</head>
+	<body>
+				
+		<header class="grad-blue">
+
+			<div class="contenedor-info-header">
+
+
+				<div class="cont-img-perfil img-perfil animate__animated animate__swing animate__normal">
+					<img  id="zumbido"  src="imgs/foto-perfil.jpg">					
+				</div>	
+
+				<div class="nombre-nivel-perfil ">
+
+					<h3 class="nombre-usuario ">Castelll0009</h3>	
+					<h3 class="nivel-fit">Master Fitness</h3>
+					<div class="cont-medalla-estrellas">
+						<span class="span-cont-medalla"><img class="img-medalla" src="imgs/principiante.png"></img></span>												
+						<span class="estrella estrella1" ><i class="fas fa-star"></i></span>												
+						<span class="estrella estrella2" ><i class="fas fa-star"></i></span>														
+						<span class="estrella estrella3" ><i class="fas fa-star"></i></span>														
+						<span class="estrella estrella4" ><i class="fas fa-star"></i></span>		
+						<span class="estrella estrella5" ><i class="fas fa-star"></i></span>														
+					</div>
+					<div class="w3-progress-container ">
+						<div id="myBar" class="w3-progressbar w3-green" style="width:20%">
+							<div id="demo" class="w3-center w3-text-white ">20%</div>
+						</div>
+					</div>																																											
+				</div>	
+
+			</div>
+																							
+		</header>	
+
+		<main>
+			<!--div scanear  QR-->	
+			<div class="div-desplegable-scanear-qr">
+
+			</div>
+			<i class="fa fa-th" id="btn-detalles"  onclick="desplegarItems()"></i>
+			<i class="fas fa-eye" id="beepc" onclick="vistaEscritorio()" ></i>					
+			<!--Menu iconos-->		
+			<div class="cards-container-portada" >						
+				<figure class="figure-container-portada">											
+					<!--
+						<img class="img-portada"  src="https://us.123rf.com/450wm/romastudio/romastudio1812/romastudio181200216/117004062-material-deportivo-sobre-un-fondo-negro-vista-superior-motivaci%C3%B3n.jpg?ver=6" >																																
+					-->				
+				</figure>						
+			</div>
+			<!--Menu iconos-->		
+			<div class="cont-iconos-menu " >
+				<img class="imagen-fondo-menu-iconos" alt="">				
+				<figure class="figure-container-iconos">											
+					<!--
+						<img class="icono-opcion"  src="imgs/icono-rutinas.png" >																
+					-->
+					<span class="span-cont-icono"><i class="fas icono-menu fa-dumbbell icono-rutinas"></i></span>
+					<h1>Rutinas</h1>												
+				</figure>	
+				<figure class="figure-container-iconos">	
+					<span class="span-cont-icono"><i class="fas icono-menu fa-calendar-alt"></i></span>																															
+					<h1>Mi Rendimiento</h1>												
+				</figure>						
+				<figure class="figure-container-iconos">											
+					<span class="span-cont-icono"><i class="fas icono-menu fa-store"></i></span>															
+					<h1>Productos fit</h1>												
+				</figure>					
+					<figure class="figure-container-iconos">											
+						<span class="span-cont-icono"><i class="fas icono-menu fa-money-check-alt"></i></span>														
+					<h1>Pagar Membresia</h1>												
+				</figure>	
+				<figure class="figure-container-iconos">											
+					<span class="span-cont-icono"><i class="fas icono-menu fa-qrcode"></i></span>															
+					<h1>Escanear QR</h1>												
+				</figure>				
+			</div>	
+
+			<!--Rutinas-->	
+			<div class="cards-container" >
+				
+				<h1 class="titulo-opc-menu">Rutinas</h1>
+				<!-- Slider main container -->
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide cards-container-rutinas">						  		
+						<figure class="figure-container-rutinas">												
+							<img class="imagen-producto"  src="imgs/pesas.gif" >																	
+																									
+							<!-- contenedor de  los items del menu-->																		
+						</figure>	
+						<h1 class="h-rutinas h-productos">Piernas intermedio</h1>				
+					  </div>
+
+					  <div class="swiper-slide cards-container-rutinas">
+						<figure class="figure-container-rutinas ">													
+							<div class="div-imagen">
+								<img class="imagen-producto"  src="imgs/abdomen.gif" >						
+							</div>																					
+							<!-- contenedor de  los items del menu-->																		
+						</figure>
+						<h1 class="h-rutinas">Abdomen intermedio</h1>
+					  </div>
+
+					  <div class="swiper-slide cards-container-rutinas">
+						<figure class="figure-container-rutinas">												
+							<img class="imagen-producto"  src="imgs/pesas.gif" >																	
+																									
+							<!-- contenedor de  los items del menu-->																		
+						</figure>	
+						<h1 class="h-rutinas ">Piernas intermedio2</h1>	
+					  </div>
+					  
+					  <div class="swiper-slide cards-container-rutinas">
+						<figure class="figure-container-rutinas">												
+							<img class="imagen-producto"  src="imgs/piernas-intermedio.gif" >																																										
+							<!-- contenedor de  los items del menu-->																		
+						</figure>
+						<h1 class="h-rutinas">Piernas avanzado</h1>	
+					  </div>
+					
+					</div>
+					<br>
+					<br>
+					<div class="swiper-pagination"></div>
+				  </div>
+		
+               																																
+			</div>		
+			<!--Productos  Gym-->							
+			<div class="cards-container-productos" >
+				<h1 class="titulo-opc-menu">Productos</h1>
+				<figure class="figure-container-productos">					
+					<h1 class="grad-red h-productos">Proteinas </h1>						
+					<img class="imagen-producto"  src="https://2.bp.blogspot.com/-1krYCfxQSgw/Vp7AvZvziPI/AAAAAAAARNw/G7ok5EzTAzk/s1600/prote%25C3%25ADnas%2Bgym%2B2.jpg" >											
+					<div class="div-detalles-producto">
+					<h2 class="precio-producto">$4000</h2>						
+					</div>															
+					<!-- contenedor de  los items del menu-->																		
+				</figure>		             																																
+			</div>		
+				
+			<nav class=" nav-barra-inferior animate__animated animate__fadeIn">
+				<a href = "index.html" class="margen-derecha">Catalogo</a>
+				<a href = "contactos.html" class="margen-derecha" class="margen-derecha">Contactos</a>				
+				<a href = "https://www.facebook.com/profile.php?id=100009055449064" class="margen-derecha">Redes Sociales</a>	
+				<a href = "https://www.instagram.com/castelll0009">Instragram</a>		
+				<a  class="grad-purple" style=" border-radius: 5px; padding-left: 8px; padding-right: 8px; color: beige;"  href = "https://drive.google.com/file/d/1NDsNjMkE4laC038JCCZmbtsV9ulMIvaF/view?usp=sharing">CV-Developer</a>	
+			</nav>				
+			
+		</main>	  
+		<audio id="buzz">	  
+	  		<source src="buzz.mp3" type="audio/mpeg">
+	  		Your browser does not support the audio element.
+		</audio>
+		
+		<script src="js/interfaz-cliente.js"></script>				
+		<script src="js/app.js"></script>			
+		<script src="js/menu.js"></script>			
+		<script src="js/buttom_menu.js"></script>	
+		<script src="js/jquery.js"></script>  		
+		 <!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>	 
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
+	    <!-- Initialize Swiper -->
+	    <script src="js/slider.js"></script> 		
+	</body>
+</html>
