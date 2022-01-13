@@ -1,0 +1,87 @@
+
+.cont-iconos-menu{	/*card-container*/	
+	width: 100%;	
+	text-align: center;		
+	display: flex;				
+	flex-wrap: wrap;		
+	position: relative;	
+	justify-content: center;		
+	background-image: radial-gradient(circle at 50% 0, rgba(0, 0, 0, 0) 40%, #040814 70%	);		
+	font-family: 'Roboto', sans-serif;
+	padding-top: 488px;
+	margin-top: -300px;	
+}
+.figure-container-iconos{		
+	position: relative;	
+	/*border: 2px solid  rgba(0, 17, 2, 0.918);*/
+	min-width: 70px;	
+	max-width: 70px;    		
+	margin:  10px;	
+	align-items: center;		
+	text-align: center;	
+	
+}
+.imagen-fondo-menu-iconos{	
+	/*display: none;*/
+	/*
+	content:url("https://media.istockphoto.com/photos/gym-background-with-equipment-picture-id953047628?k=20&m=953047628&s=170667a&w=0&h=5InfjXeOS0Aiy1D4OXtpwgH_m3NurLm4xYrMAy7yu-g=");	
+	content:url("https://media.istockphoto.com/photos/minimal-gym-dark-background-picture-id947343796?k=20&m=947343796&s=170667a&w=0&h=iX7kIzZLvWSrndOi35kmbMo4uqLnLHBTK_9fmW29SyY=");
+	*/
+	/*content:url("https://us.123rf.com/450wm/romastudio/romastudio1812/romastudio181200216/117004062-material-deportivo-sobre-un-fondo-negro-vista-superior-motivaci%C3%B3n.jpg?ver=6");*/
+	
+	position: fixed;
+	filter: blur(5px);
+	box-shadow: 80px 80px 80px 80px black inset;
+	z-index: -1;
+}
+
+.figure-container-iconos h1{
+	color: rgb(255, 255, 255);
+	font-size: 1em;
+	margin-bottom: 0;	
+	display:block	;	
+	margin: auto;
+}
+
+.span-cont-icono{
+	background-color: aliceblue;
+	border: 1px solid #ffffff;	
+	min-width: 70px;
+	min-height: 70px;
+	border-radius: 5%;	
+	position: relative;	
+	display: flex;
+	align-items: center;	
+	margin: auto;	
+}
+.span-cont-icono:hover{
+	box-shadow: 0px 0px 40px 0px #196DE9; 	
+}
+.span-cont-icono i{		
+	font-size: 2em;
+	min-width: max-content;
+	min-height: max-content;	
+	margin:auto;
+}
+	
+.icono-rutinas{		
+
+	min-width: 70px;
+	min-height: 70px;
+}	
+.icono-menu{
+	color:#2283CD;	
+}
+/*RESOLUCION MOVIL*/
+@media screen and (max-width: 700px){	 
+	.span-cont-icono{		
+		min-width: 55px;
+		max-width: 55px;
+		min-height: 55px;
+		border-radius: 5%;			
+		position: relative;	
+	}
+	.span-cont-icono i{		
+		
+	}
+}

@@ -13,14 +13,12 @@
   $json = array();
   while($row = mysqli_fetch_array($result)) {
     $json[] = array(
-      'nombre_usuario' => $row['nombre_usuario'],
-      'contrasena' => $row['contrasena'],      
-      'telefono' => $row['telefono'],   
-      'nombre' => $row['nombre'],         
-      'cedula' => $row['cedula'],  
-      'nivel' => $row['nivel'],
-      'correo' => $row['correo'],
-      'cantidad_dias_asistidos' => $row['cantidad_dias_asistidos'],
+      'nombre' => $row['nombre'],
+      'precio' => $row['precio'],
+      'descripcion' => $row['descripcion'],      
+      'propiedades' => $row['propiedades'],            
+      'usos' => $row['usos'],      
+      'recetas' => $row['recetas'],  
       'id' => $row['id']
     );
   }
@@ -28,4 +26,3 @@
   $jsonstring = json_encode($json);
   echo $jsonstring;
 ?>
-

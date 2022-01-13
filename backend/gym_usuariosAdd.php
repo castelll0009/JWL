@@ -5,16 +5,19 @@
     if(isset($_POST['id'])){
         $id = $_POST['id'];
         $nombre_usuario = $_POST['nombre_usuario'];
-        $contrasena = $_POST['contrasena'];
+        $contrasena = $_POST['controsena'];
         $telefono = $_POST['telefono'];
-        $nombre = $_POST['nombre'];                
-        $correo = $_POST['correo'];               
+        $nombre = $_POST['nombre'];
+        $cedula = $_POST['cedula'];
+        $nivel = $_POST['nivel'];
+        $correo = $_POST['correo'];
+        $cantidad_dias_asistidos = $_POST['cantidad_dias_asistidos'];
+       
 
         // Establecer niveles 
      
-       // $cantidad_dias_asistidos = 60;
-      //  $id = uniqid(),'<br />';   
-      /*   
+        $cantidad_dias_asistidos = 60;
+      //  $id = uniqid(),'<br />';
         if($codigoQr){
             $cantidad_dias_asistidos +=1;
         }
@@ -38,10 +41,9 @@
                 $nivel = 'MasterFit';
              }
            
-            */
+            
       
-        $query = "INSERT into tbl_gym_usuario(id,nombre_usuario, contrasena, telefono, nombre_completo, correo) 
-        VALUES ('$id','$nombre_usuario','$contrasena','$telefono','$nombre','$correo')";
+        $query = "INSERT into tbl_gym_usuario(id,nombre_usuario, contrasena, telefono, nombre, cedula, nivel, correo, cantidad_dias_asistidos) VALUES ('$id','$nombre_usuario','$contrasena','$telefono','$nombre','$cedula','$nivel','$correo','$cantidad_dias_asistidos')";
         
         $result = mysqli_query($connection, $query);
         if(!$result) {
