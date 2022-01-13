@@ -8,9 +8,46 @@
 	justify-content: center;		
 	background-image: radial-gradient(circle at 50% 0, rgba(0, 0, 0, 0) 40%, #040814 70%	);		
 	font-family: 'Roboto', sans-serif;
-	padding-top: 488px;
+	padding-top: 300px;
 	margin-top: -300px;	
 }
+.cont-icono-portada-menu{
+	width: 100%;
+	display: block;	
+	text-align: center;
+	padding-bottom: 50px;
+}
+.icono-iconos-menu{
+	width: 50%;	
+}
+.cont-icono-portada-menu h1{
+	font-family: 'Raleway', sans-serif;
+	letter-spacing:  3px;
+	font-style: oblique;
+	font-size: 1.3em;
+	color: white;
+}
+#titulo-enunciado-pagina{
+	font-family: 'Poppins', sans-serif;
+	font-size: 3em; 
+	font-weight: 800;
+	color: rgba(240, 235, 235, 0.788);
+}
+#subtitulo-enunciado-pagina{
+	width: 100%;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.4em; 
+	font-style: normal;
+	font-weight: 5;
+	color: #D682B0;	
+}
+#titulo-invertir-mejor-juntos{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6em; 
+	color: #B1ADC4;
+}
+
 .figure-container-iconos{		
 	position: relative;	
 	/*border: 2px solid  rgba(0, 17, 2, 0.918);*/
@@ -80,6 +117,33 @@
 		min-height: 55px;
 		border-radius: 5%;			
 		position: relative;	
+	}
+	.cont-icono-portada-menu h1{
+		font-family: 'Raleway', sans-serif;
+		letter-spacing:  3px;
+		font-style: oblique;
+		font-size: 1.3em;
+		color: white;
+	}
+	#titulo-enunciado-pagina{
+		font-family: 'Poppins', sans-serif;
+		font-size: 2em; 
+		font-weight: 800;
+		color: rgba(240, 235, 235, 0.788);
+	}
+	#subtitulo-enunciado-pagina{
+		width: 100%;
+		display: block;
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.4em; 
+		font-style: normal;
+		font-weight: 5;
+		color: #D682B0;	
+	}
+	#titulo-invertir-mejor-juntos{
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.6em; 
+		color: #B1ADC4;
 	}
 	.span-cont-icono i{		
 		

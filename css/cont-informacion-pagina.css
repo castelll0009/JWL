@@ -1,0 +1,25 @@
+.cont-informacion-pagina{
+    text-align: left;    
+    padding: 100px;
+    
+}
+#titulo-invertir-mejor-juntos{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em; 
+    font-weight: 600;
+    color: #B1ADC4;
+}
+#parrafo-texto{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em; 
+    color: #B1ADC4; 
+    letter-spacing: 2px;
+
+}
+/*movil///////////////////////////////////////////*/
+@media screen and (max-width: 700px){	
+    .cont-informacion-pagina{          
+        padding: 10px;
+        
+    }
+}
