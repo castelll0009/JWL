@@ -29,7 +29,7 @@
 }
 #titulo-enunciado-pagina{
 	font-family: 'Poppins', sans-serif;
-	font-size: 3em; 
+	font-size: 4em; 
 	font-weight: 800;
 	color: rgba(240, 235, 235, 0.788);
 }
@@ -140,11 +140,7 @@
 		font-weight: 5;
 		color: #D682B0;	
 	}
-	#titulo-invertir-mejor-juntos{
-		font-family: 'Poppins', sans-serif;
-		font-size: 1.6em; 
-		color: #B1ADC4;
-	}
+	
 	.span-cont-icono i{		
 		
 	}

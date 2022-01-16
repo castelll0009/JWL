@@ -1,4 +1,4 @@
-var hora_para_generar_qr_manana = "0:0:0"; 
+ var hora_para_generar_qr_manana = "0:0:0"; 
 var hora_para_generar_qr_tarde = "12:0:0";
 var hoy = new Date();   
 
@@ -51,6 +51,7 @@ function generar_qr_ala_hora(pHora){
                 MostrarQR();    
             }else{
                 //debemos generar porque no se ha generado en la hora de cambio
+                console.log("no se ha generado qr generar");
                 generarQR(); 
                 guardar_qr_base_datos();   
             }                                                     
@@ -87,7 +88,7 @@ function generarQR(){   //genera un QR nuevo con un numero random.
     //alert("generando");
     document.getElementById("content").value =  random(1,10000);
     $(".qr-code").attr("src", "https://chart.googleapis.com/chart?cht=qr&chl=" + htmlEncode($("#content").val()) + "&chs=160x160&chld=L|0")            
-    //guardar el qr  en una variable entera        
+    document.getElementById("content").value; // muesra qr          
 }
 function MostrarQR(){   //genera un QR nuevo con un numero random.
     //alert("generando");
@@ -125,7 +126,7 @@ function obtener_qr_desde_base_datos(){
             console.log("QR RESPUESTA" + response);             
             datosQR = JSON.parse(response); 
             console.log(datosQR);                             
-            //mostramos en el input html el codigo                    
+            //mostramos en el input html el codigo              
             document.getElementById("content").value = datosQR[0].codigo_QR_entero;             
         }
         
@@ -133,7 +134,8 @@ function obtener_qr_desde_base_datos(){
 
 }
 //funcion que determine si e sla hora de  generar QR y si aun no se ha generado
-function generar_qr_si_no_se_ha_generado_hoy(){    
+function generar_qr_si_no_se_ha_generado_hoy(){ 
+    alert("entro funcon  gengeng")   ;
     var respuesta;
     $.post("backend/gym_obtener_ultimo_QR.php", (response) => {  
         respuesta = JSON.parse(response); 
@@ -144,6 +146,7 @@ function generar_qr_si_no_se_ha_generado_hoy(){
             //se la fecha es diferente quiere decir que no se ha generado QR hoy                 
             //alert("no se ha generado hoy ");
             //si no se ha generado entonces identificamos si estamos en la mañana o en la tarde                      
+            alert("entrooo1");
             console.log("no se ha generado hoy ");
             generarQR();
             guardar_qr_base_datos();                            
@@ -152,8 +155,9 @@ function generar_qr_si_no_se_ha_generado_hoy(){
             //si se ha generado un qr hoy puesto que las fechas coinciden                
             //alert("YA se genero hoy ");      
             console.log("YA SE HA GENERADO   hoy "); 
+            alert("entroo2o");
             obtener_qr_desde_base_datos();
-            generarQR();
+            MostrarQR();
         }
     }); 
 }

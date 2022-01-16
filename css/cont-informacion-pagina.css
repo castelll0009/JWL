@@ -16,10 +16,53 @@
     letter-spacing: 2px;
 
 }
+
+.cont-lista-caracteristicas{
+    color:  #dedce9;
+    display: flex;
+    flex-direction: column;           
+}
+.lista-caracteristicas-inversion{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;    
+    letter-spacing: 2px;     
+    padding-bottom: 3px;
+    font-size: 1.1em;    
+}
+.icono-palomita{
+    color: rgb(255, 255, 255);    
+    font-size: 1.5em;
+    padding: 5px;
+    background-color: green ;    
+    border-radius: 50%;        
+
+}
+
 /*movil///////////////////////////////////////////*/
 @media screen and (max-width: 700px){	
     .cont-informacion-pagina{          
         padding: 10px;
         
+    }
+    #titulo-invertir-mejor-juntos{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em; 
+        font-weight: 600;
+        color: #B1ADC4;
+    }
+    #parrafo-texto{
+        font-family: 'Poppins', sans-serif;
+        font-size: .9em; 
+        color: #B1ADC4; 
+        letter-spacing: 2px;
+    
+    }   
+    .lista-caracteristicas-inversion{        
+        font-size: .8em;    
+    }
+    .icono-palomita{          
+        font-size: 1.2em;
+        padding: 3px;
+        border-radius: 50%;            
     }
 }
