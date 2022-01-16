@@ -36,6 +36,17 @@
     background-color: green ;    
     border-radius: 50%;        
 
+}	
+#elije-tu-futuro{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em; 
+    font-weight: 600;
+    color: #B1ADC4;
+}
+#gana-desde{
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;     
+    color: #B1ADC4;    
 }
 
 /*movil///////////////////////////////////////////*/
