@@ -1,4 +1,15 @@
 
+.titulo-holder{
+    background-color: #293297;    
+}
+.titulo-investor{
+    background-color: #293297;    
+}
+figure{
+    border-radius: 10%;
+    border: 1px solid white;
+    position: relative;
+}
 @media screen and (max-width: 700px){
-    
+
 }
