@@ -20,11 +20,13 @@
 	background-color: rgba(0, 0, 0, 0);
 	border-color: rgb(0, 0, 0);
 	border-radius: 2%;
-	border: 2px solid  #196DE9;
-	min-width: 200px;	
-	max-width: 200px;
+	/*border: 2px solid  #196DE9;*/
+	background-color: rgba(128, 0, 128, 0.432); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to top, #8a268775,#502a917c, #5d46bb86);	
+	min-width: 100px;	
+	max-width: 100px;
 	min-height: 100px;
-	max-height: max-content;
+	max-height: 200px;
     width: max-content;
     height: max-content;	
 	overflow: hidden;	
