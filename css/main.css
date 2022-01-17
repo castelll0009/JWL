@@ -5,8 +5,8 @@
 	--main-secondary-dark: #000;
 }
 body{		
-
-	font-family: 'Roboto', sans-serif;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
 	-webkit-user-select: none;			
 	/*background-image: url(https://t4.ftcdn.net/jpg/04/64/93/89/240_F_464938922_BVaEHmTkrLR9KF0WECxXivICZZUSIrbu.jpg);*/
 	/*
@@ -28,10 +28,10 @@ main{
 	/*background-color: rgb(20, 20, 20);*/
 	/*background-image: url("https://us.123rf.com/450wm/romastudio/romastudio1812/romastudio181200216/117004062-material-deportivo-sobre-un-fondo-negro-vista-superior-motivaci%C3%B3n.jpg?ver=6");		
 	*/
-	background-image: url("../imgs/Back-Ground.png");		
+	background-image: url("../imgs/BGround.png");		
 	background-repeat: no-repeat;
 	background-attachment: fixed;	
-	background-size: contain;	
+	background-size: cover;	
 	font-family: 'Roboto', sans-serif;
 }
 

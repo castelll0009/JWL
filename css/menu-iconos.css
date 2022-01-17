@@ -11,9 +11,7 @@
 	padding-top: 300px;
 	margin-top: -300px;	
 }
-.cont-icono-portada-menu{
-	width: 100%;
-	display: block;	
+.cont-icono-portada-menu{		
 	text-align: center;
 	padding-bottom: 50px;
 }
@@ -27,7 +25,7 @@
 	font-family: 'Raleway', sans-serif;
 	letter-spacing:  3px;
 	font-style: oblique;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	color: white;
 }
 #titulo-enunciado-pagina{
@@ -114,6 +112,7 @@
 }
 /*RESOLUCION MOVIL*/
 @media screen and (max-width: 700px){	 
+	
 	.span-cont-icono{		
 		min-width: 55px;
 		max-width: 55px;
@@ -121,13 +120,9 @@
 		border-radius: 5%;			
 		position: relative;	
 	}
-	.cont-icono-portada-menu h1{
-		font-family: 'Raleway', sans-serif;
-		letter-spacing:  3px;
-		font-style: oblique;
-		font-size: 1.3em;
-		color: white;
-	}
+	.cont-icono-portada-menu h1{	
+		font-size: .8em;	
+		}
 	#titulo-enunciado-pagina{
 		font-family: 'Poppins', sans-serif;
 		font-size: 2em; 
