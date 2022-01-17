@@ -37,12 +37,14 @@
     background-color: #1F5186;
 }
 #titulo-holder{
+    margin: 0px;
     padding: 10px;
     background-color: #293299;    
     display:block;
     width: 100%;
 }
 #titulo-investor{
+    margin: 0px;
     padding: 10px;
     background-color: #293299;    
     display:block;
