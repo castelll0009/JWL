@@ -6,7 +6,8 @@
 	flex-wrap: wrap;		
 	position: relative;	
 	justify-content: center;		
-	background-image: radial-gradient(circle at 50% 0, rgba(0, 0, 0, 0) 40%, #040814 70%	);		
+	/*degradado en forma de elipse*/
+	/*background-image: radial-gradient(circle at 50% 0, rgba(0, 0, 0, 0) 40%, #040814 70%	);		*/
 	font-family: 'Roboto', sans-serif;
 	padding-top: 300px;
 	margin-top: -300px;	
@@ -15,6 +16,25 @@
 	text-align: center;
 	padding-bottom: 50px;
 }
+#www-jwl-com{	
+	font-family: 'Raleway', sans-serif;
+	letter-spacing:  3px;
+	font-style: oblique;
+	font-size: 1.5em;
+	color: white;
+}
+#planes{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+	font-size: 3em;
+	color: white;
+}
+.cont-icono-portada-planes {					
+	padding-top: 200px;		
+	text-align: center;
+	padding-bottom: 50px;	
+}
+
 .icono-iconos-menu{
 	width: 50%;	
 }
@@ -113,6 +133,7 @@
 /*RESOLUCION MOVIL*/
 @media screen and (max-width: 700px){	 
 	
+	
 	.span-cont-icono{		
 		min-width: 55px;
 		max-width: 55px;
@@ -120,9 +141,9 @@
 		border-radius: 5%;			
 		position: relative;	
 	}
-	.cont-icono-portada-menu h1{	
+	#www-jwl-com{	
 		font-size: .8em;	
-		}
+	}	
 	#titulo-enunciado-pagina{
 		font-family: 'Poppins', sans-serif;
 		font-size: 2em; 

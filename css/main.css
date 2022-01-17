@@ -34,14 +34,12 @@ main{
 	background-size: cover;	
 	font-family: 'Roboto', sans-serif;
 }
-
-
-#zumbido:active {	
-	animation: step-start;
-	animation-duration: 0.2s;
+.degradado-elipse{
+	background-image: radial-gradient(circle at 50% 0, rgba(0, 0, 0, 0) 40%, #040814 70%	);		
 }
-
-
+.degradado-elipse-morado{
+	background-image: radial-gradient(circle at 50% 0, rgba(0, 0, 0, 0) 40%, #040814 70%	);		
+}
 
 a{
 	color: var(--main-primary);	
@@ -228,7 +226,7 @@ img{
 .subtitulos{
     font-family: 'Poppins', sans-serif;
     font-size: 1.6em; 
-    font-weight: 600;	
+    font-weight: 900;	
     color: #B1ADC4;
 }
 .parrafos-texto{
