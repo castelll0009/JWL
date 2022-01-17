@@ -4,7 +4,7 @@ header{
     display: block;       
     z-index: 10000;  
     height: max-content;              
-    background: white;      
+    background: transparent;      
     font-size: 1em;    
     padding-bottom: 1px;    
     position:relative;

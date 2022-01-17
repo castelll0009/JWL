@@ -7,7 +7,7 @@
 	position: relative;		
 	/*background: radial-gradient(circle at 50% 0,black 50%, rgb(151, 151, 151))*/
 	/*background: linear-gradient(rgba(0, 0, 0, 0.322), #040814 80%);*/
-	background-color:#040814;
+	background-color:#04081400;
 }	
 .titulo-opc-menu{
 	color:white;
@@ -17,7 +17,7 @@
 }
 .figure-container-rutinas{		
 	position: relative;
-	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
 	border-color: rgb(0, 0, 0);
 	border-radius: 2%;
 	border: 2px solid  #196DE9;
@@ -41,15 +41,9 @@
 
 
 /*/////////////ESCRITORIO/////////////////////////////////////////////////*/
-@media screen and (min-width: 700px){	
+@media screen and (min-width: 700px){			
 	
-	.figure-container{	
-		margin-left: 25px;
-		margin-bottom: 25px;		
-	}
-
-	
-	.figure-container:hover{		
+	.figure-container-rutinas:hover{		
 		z-index: 1;				
 		box-shadow: 2px 2px 4px var(--main-primary), 10px 10px 10px var(--main-primary);							
 	}		
