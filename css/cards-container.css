@@ -74,11 +74,28 @@
     font-weight: 800;
 }
 .btn-figure{
+    border-radius: 10%;
+    outline: none;
+    border: 1px solid #08298d ;
     background-color:  #153BAA;
-    color:  #538FF0;
+    color:  #649df8;
+}
+.btn-figure:focus {
+    outline: none;
+}
+.btn-figure:hover {
+    border: 1px solid #2a5cf3 ;
 }
 .flexibilidad{
-    color:  #457A9D;
+    color:  #80bdf1;
+}
+#informacion-pie-plan{
+    margin: 0px;    
+    padding: 10px;
+    background-color: #221D53;  
+    color:  #b1dbff;
+    display:block;
+    width: 100%;
 }
 .span-circulo{    
     margin-top: -22px;
@@ -97,6 +114,7 @@
    width: 100%; 
    display:block;
 }
+
 @media screen and (min-width: 700px){
     .span-circulo{    
         margin-top: -22px;
