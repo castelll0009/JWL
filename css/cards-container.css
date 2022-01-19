@@ -97,6 +97,12 @@
    width: 100%; 
    display:block;
 }
+@media screen and (min-width: 700px){
+    .span-circulo{    
+        margin-top: -22px;
+        margin-left: -400px;
+    }
+}
 @media screen and (max-width: 700px){
     .figure-container{	
        	
