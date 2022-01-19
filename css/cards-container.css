@@ -37,6 +37,8 @@
     background-color: #1F5186;
 }
 #titulo-holder{
+    z-index: 5;
+    position: relative;
     margin: 0px;
     padding: 10px;
     background-color: #293299;    
@@ -44,6 +46,7 @@
     width: 100%;
 }
 #titulo-investor{
+    z-index: 5;
     margin: 0px;    
     padding: 10px;
     background-color: #293299;    
@@ -77,13 +80,22 @@
 .flexibilidad{
     color:  #457A9D;
 }
-.span-circulo{
-    border-radius: 50%;
-    min-width: 100px;
-    max-width: 100px;
-    max-height: 100px;
+.span-circulo{    
+    margin-top: -22px;
+    margin-left: -80px;
+    box-shadow: 1px 4px 8px 0px rgb(2, 2, 2);    
+    position: absolute;    
+    border-radius: 100%;
+    min-width: 70px;
+    max-width: 70px;
+    min-height: 70px;
+    max-height: 70px;
     background-color: #27318A;        
-    background-image: radial-gradient(to right, #196DE9,#502a914b, #00000010);
+    background-image: radial-gradient(#3C858D 20%, #273688 , #273688);
+}
+.span-circulo img{          
+   width: 100%; 
+   display:block;
 }
 @media screen and (max-width: 700px){
     .figure-container{	
