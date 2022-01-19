@@ -44,7 +44,7 @@
     width: 100%;
 }
 #titulo-investor{
-    margin: 0px;
+    margin: 0px;    
     padding: 10px;
     background-color: #293299;    
     display:block;
@@ -77,7 +77,14 @@
 .flexibilidad{
     color:  #457A9D;
 }
-
+.span-circulo{
+    border-radius: 50%;
+    min-width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    background-color: #27318A;        
+    background-image: radial-gradient(to right, #196DE9,#502a914b, #00000010);
+}
 @media screen and (max-width: 700px){
     .figure-container{	
        	
