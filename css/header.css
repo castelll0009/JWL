@@ -6,10 +6,44 @@ header{
     height: max-content;              
     background: transparent;      
     font-size: 1em;    
-    padding-bottom: 1px;    
-    position:relative;
-    position: fixed;    
+    padding-bottom: 1px;        
+    position: fixed;        
     /*backdrop-filter: blur(2px);*/
+}
+/*SIMULAODR  DE INVERSIONES*/
+.simulador-inversiones{  
+    position:fixed;      
+    display: flex;
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 5px;
+    top: 0;
+    right: 0;
+    flex-wrap: nowrap;
+    flex-direction: row;           
+    background-color: #d682b06e;        
+    border-radius: 7%;
+    align-items: center;
+    
+}
+.simulador-inversiones:hover{
+    background-color:  #00AFFF; 
+}
+#icono-calculadora{
+    font-size: 2em;
+    color: white;
+}
+#icono-calculadora:hover{    
+    /*color: #00AFFF;*/
+}
+#titulo-simulador-inversiones{        
+    color:white;
+    margin:0px;
+    padding: 0px;
+    padding-left: 5px;
+    font-size: 1em;
+}
+#titulo-simulador-inversiones:hover{              
 }
 .borde{
     border: 1px solid rgb(234, 190, 63);  
