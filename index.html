@@ -5,7 +5,8 @@
         <meta charset= "utf-8">		
 		<!-- swiper  slide-->
 		<link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-		<link rel="stylesheet" href="css/cards-container.css">	
+		<link rel="stylesheet" href="css/interfaz-simulador-inversiones.css">	
+		<link rel="stylesheet" href="css/cards-container.css">			
 		<link rel="stylesheet" href="css/cont-informacion-pagina.css    ">	
         <link rel="stylesheet" href="css/swiper.css">					
 		<link rel="stylesheet" href="css/menu-iconos.css">	
@@ -55,13 +56,78 @@
 
 			</div>
 
+
 			<div class="simulador-inversiones">
 				<i id="icono-calculadora" class="fas fa-calculator"></i>
 				<h1 id="titulo-simulador-inversiones" css="header">Simulador</h1>
-			</div>																		
+			</div>	
+			
+			
 		</header>	
 
+		<div class="div-interfaz-simulador">
+			<h1 id="titulo-simulador" >Ingresa los valores</h1>		            
+                <form >
+					<div style="display:none;">
+							<input type="hidden" name="_method" value="POST">
+					</div>    
+					                
+					<div class="valor-inversion row">
+                        <label for="">Valor de la inversión*</label>
+                        <input type="text" id="id-valor-inversion" placeholder="Valor de la inversion" class="form-control" required="required"></input>
+					</div>
+
+                    <div class="row">
+                        <label for="">Plazo de la inversión (Meses)*</label>  
+						<br>                      
+						<select name="" id="select-meses-inversion">
+							<option value="0">Seleccione el plazo maximo de su inversión</option>
+							<option value="6">6 Meses</option>
+							<option value="12">12 Meses</option>
+							<option value="18">18 Meses</option>
+						</select>
+					</div>
+
+                    <div class="row">
+                        <label for="">Periodicidad de reinversión*</label>
+                        <div class="selec_edit">
+						<select name="" id="select-periodicidad-inversion">
+							<option value="0" >Seleccione la periodicidad de reinversión</option>
+							<option value="6">Cada mes</option>
+							<option value="6">Cada 3 meses</option>
+							<option value="6">Cada 6 meses</option>
+							<option value="6">Cada 12 meses</option>								
+							<option value="6">Cada 18 meses</option>								
+						</select>
+						</div>
+                    </div>
+
+                    <div class="row">
+                        <span style="margin: 0 0 50px 30%;">
+							<div class="g-recaptcha" data-sitekey="6LcEciMTAAAAAMoMw5fIyZ3oFHLHsbQRJC29bRoL">
+								<div style="width: 304px; height: 78px;">
+									<div>
+										<iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LcEciMTAAAAAMoMw5fIyZ3oFHLHsbQRJC29bRoL&amp;co=aHR0cHM6Ly93d3cuY29uZmlhci5jb29wOjQ0Mw..&amp;hl=en&amp;v=dPctOHA2ifhWm5WzFM_B5TjT&amp;size=normal&amp;cb=9tgcnze0kpth" width="304" height="78" role="presentation" name="a-we5mtoytbjnr" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">										
+										</iframe>
+									</div>
+										<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">
+										</textarea>
+								</div>
+									<iframe style="display: none;">
+									</iframe>								
+							</div>
+						</span>
+                    </div>
+
+                    <div class="row">
+                        <span>Los campos señalados con * son obligatorios</span>
+                        <div class="relod_Simulador"></div>
+                        <input class="class_class_enviar" type="submit" value="Simular">                    </div>
+                </form>               				             
+		</div>
+
 		<main>
+			
 			<!--div scanear  QR-->	
 			<div class="div-desplegable-scanear-qr">
 
@@ -245,6 +311,7 @@
 	  		Your browser does not support the audio element.
 		</audio>
 		
+		<script src="js/app-request.js"></script>		
 		<script src="js/funciones.js"></script>				
 		<script src="js/header.js"></script>												
 		<script src="js/menu.js"></script>						
