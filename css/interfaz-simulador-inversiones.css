@@ -1,5 +1,17 @@
 .div-interfaz-simulador{
-    background-color: black;            
+    background-color: black;    
+    color: white;        
     justify-content: center;
+    text-align: center;
     padding: 50px;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    display: block;
+    margin: auto;
+}
+.valor-inversion{
+    display:block;
+    margin: auto;
+ 
 }

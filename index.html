@@ -67,7 +67,7 @@
 
 		<div class="div-interfaz-simulador">
 			<h1 id="titulo-simulador" >Ingresa los valores</h1>		            
-                <form >
+                <form id="formulario-simulador-inversion">
 					<div style="display:none;">
 							<input type="hidden" name="_method" value="POST">
 					</div>    
@@ -122,7 +122,9 @@
                     <div class="row">
                         <span>Los campos señalados con * son obligatorios</span>
                         <div class="relod_Simulador"></div>
-                        <input class="class_class_enviar" type="submit" value="Simular">                    </div>
+						<button class="boton-calcular">Calcular ganancias</button>                        
+						<input type="text" readonly="readonly" id="id-resultado-inversion" placeholder="Resultado" ></input>
+					</div>
                 </form>               				             
 		</div>
 
