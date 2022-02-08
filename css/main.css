@@ -15,6 +15,7 @@ body{
 	background-image: url(https://image.freepik.com/vector-gratis/hexagono-fondo-abstracto-textura-negra_206725-413.jpg);		
 	*/
 	background: black;
+	overflow: hidden;
 	/*background-size: cover;*/
 	/*background-repeat: no-repeat;*/
 /*	background-attachment: fixed;*/
