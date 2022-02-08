@@ -5,13 +5,12 @@ let meses_inversion = 0;
 
 $('#formulario-simulador-inversion').submit(e => {        
   e.preventDefault();     
-
   //antes  de  calcular  comprobar  si  los  campos estan llenos   
     valor_invertir =  $('#id-valor-inversion').val();
     meses_inversion =  $('#select-meses-inversion').val();
-    ganancias_plazo = valor_invertir * interes;       
-    $("#id-resultado-inversion").val(ganancias_plazo + " USD");
-    alert(ganancias_plazo);
+    alert(meses_inversion);
+    ganancias_plazo = (valor_invertir * interes) * meses_inversion;       
+    $("#id-resultado-inversion").val(ganancias_plazo + " USD");    
 });
 
 
