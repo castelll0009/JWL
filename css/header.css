@@ -11,7 +11,8 @@ header{
     /*backdrop-filter: blur(2px);*/
 }
 /*SIMULAODR  DE INVERSIONES*/
-.simulador-inversiones{      
+.simulador-inversiones{  
+    cursor: pointer;    
     position:fixed;      
     display: flex;
     margin-top: 10px;

@@ -4,11 +4,9 @@
     justify-content: center;
     text-align: center;
     padding: 50px;
-    width: 100%;
+    width: 100% ;
     position: absolute;
-    z-index: 100;
-    display: block;
-    margin: auto;
+    z-index: 100;    
 }
 .div-valor-inversion{               
  
@@ -28,5 +26,14 @@
     padding: 0;
 }
 #select-meses-inversion{
-
+   
+}
+.select-formulario-inversion{
+    max-width: 200px;     
+    display: block;
+    margin: auto;
+}
+.display-block-margin-auto{
+    display: block; 
+    margin: auto;
 }
