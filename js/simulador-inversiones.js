@@ -3,7 +3,7 @@ let  valor_invertir = 0; //valor   invertir en dolares
 let ganancias_plazo = 0;
 let meses_inversion = 0;
 
-
+/*
 $(document).on('click', '.boton-delete', function() {
 
   //antes  de  calcular  comprobar  si  los  campos estan llenos
@@ -14,3 +14,9 @@ $(document).on('click', '.boton-delete', function() {
    
      
 });
+*/
+
+$(document).on('click', '.simulador-inversiones' , function(){                
+    //despliegue detalles con toggle        
+    $(".div-interfaz-simulador").toggleClass("desplegar-hacia-izquierda");        
+});    
