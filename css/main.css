@@ -236,7 +236,11 @@ img{
     letter-spacing: 2px;
 }	
 
-
+.grad-backdrop-filter{
+	backdrop-filter: blur(2px);
+	background-color: rgba(128, 0, 128, 0.26); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #196DE9,#502a914b, #00000010);
+}
 .grad-blue{    
     background-color: rgba(128, 0, 128, 0.26); /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, #196DE9,#502a914b, #00000010);
