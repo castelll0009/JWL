@@ -27,7 +27,7 @@ header{
     align-items: center;
     
 }
-.simulador-inversiones:hover{
+.simulador-inversiones:active{
     background-color:  #00AFFF; 
 }
 #icono-calculadora{

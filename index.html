@@ -60,7 +60,7 @@
 			</div>
 
 
-			<div class="simulador-inversiones">
+			<div class="simulador-inversiones" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
 				<i id="icono-calculadora" class="fas fa-calculator"></i>
 				<h1 id="titulo-simulador-inversiones" css="header">Simulador</h1>
 			</div>	
@@ -78,10 +78,10 @@
 					                
 					<div  class="div-valor-inversion">
                         <label for="">Valor de la inversión*</label>						
-                        <input type="text" id="id-valor-inversion" placeholder="Valor de la inversion" class="form-control" required="required"></input>
+                        <input type="number" id="id-valor-inversion" placeholder="Monto de inversión USD" class="form-control" required="required"></input>
 					</div>
 
-                    <div class=" " style=""  >
+                    <div class=" "   >
                         <label for="">Plazo de la inversión (Meses)*</label>  						              					
 							<select class="form-control select-formulario-inversion " name="" id="select-meses-inversion">							
 								<option value="6">6 Meses</option>
@@ -124,8 +124,8 @@
                     <div class="column position-relative">
                         <span>Los campos señalados con * son obligatorios</span>
                         <div class="relod_Simulador"></div>
-						<button  class="btn boton-calcular btn-primary display-block-margin-auto   " style="width: max-contentF;">Calcular ganancias</button>                        
-						<input style=" max-width: 300px; " class="form-control  display-block-margin-auto  " type="text" readonly="readonly" id="id-resultado-inversion" placeholder="Resultado" ></input>
+						<button id="id-boton-calcular"  class="btn boton-calcular btn-primary display-block-margin-auto   " style="width: max-content;">Calcular ganancias</button>                        
+						<input id="id-resultado-inversion" style=" max-width: 300px; text-align: center; " class="form-control  display-block-margin-auto  " type="text" readonly="readonly"  placeholder="Resultado Ganancias" ></input>
 					</div>
                 </form>               				             
 		</div>
@@ -310,16 +310,18 @@
 			</nav>				
 			
 		</main>	  
-		<audio id="buzz">	  
+		<!--
+	<audio id="sonido-logo">	  
 	  		<source src="buzz.mp3" type="audio/mpeg">
 	  		Your browser does not support the audio element.
 		</audio>
+		-->
+	
 		
 		<script src="js/simulador-inversiones.js"></script>	
 		<script src="js/app-request.js"></script>		
 		<script src="js/funciones.js"></script>				
-		<script src="js/header.js"></script>												
-		<script src="js/menu.js"></script>						
+		<script src="js/header.js"></script>																			
 		<script src="js/jquery.js"></script>  		
 		 <!-- Swiper JS -->
 		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>	 
